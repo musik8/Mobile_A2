@@ -7,4 +7,5 @@ The user is able to share their content, including the image by the uploading it
 
 
 The web service is a POST to the imgur api (https://api.imgur.com/3/.) for uploading images. I have to include a client ID so that the hosting service knows where the anonymous images are coming from. The API requires the image to be converted to a base64 string and the type uploaded. The response includes the link to the image which is stored locally.
+
 Information stored locally is: Title, Source, Description, ImagePath (device image path), bool (if the topic is a subtopic), Link to online image, foreign key and a list of Topics (subtopics). The table shares a relationship with itself.  
