@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="sourceTree.TopicDisplay"
+              BackgroundColor="#E1ECF1"
+             Title="{Binding Title}">
+
+    <ContentPage.Resources>
+        <StyleSheet Source="/Assets/style.css" />
+    </ContentPage.Resources>
+    <ContentPage.ToolbarItems   BackgroundColor="#E1ECF1">
+      
+        <ToolbarItem Text="Share"
+                 Order="Primary"
+                     Clicked="Share_Clicked"
+                 Priority="0" />
+        <ToolbarItem Text="Edit"
+                 Order="Primary"
+                 Clicked="Edit_Clicked"
+                 Priority="1" />
+        <ToolbarItem Text="Add"
+                 Order="Primary"
+                 Clicked="Add_Clicked"
+                 Priority="2" />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical">
+        <StackLayout Padding="0" >
+
+
+
+            <StackLayout Margin="5">
+
+                <Frame BorderColor="#686868"
+                       BackgroundColor="#E1ECF1"
+                       
+               Padding="5">
+                    <StackLayout Orientation="Vertical"
+                         HorizontalOptions="Center"
+                         Spacing="15">
+                        <Label x:Name="onlineUrl" FontSize="Small"/>
+                        <Image x:Name="imageDisplay" />
+                      
+                    </StackLayout>
+                </Frame>
+
+                <Frame BorderColor="#686868"
+                       BackgroundColor="#E1ECF1"
+                       
+                         Padding="10,5,5,10">
+                    <StackLayout Orientation="Vertical"
+                         Spacing="10">
+
+                       
+                        <Label Text="Title"
+                       FontSize="Small"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center" />
+
+                        <Label
+                       FontSize="Large"
+                       x:Name="TitleText"
+                       TextColor="#2D3141"
+                       VerticalOptions="Center" />
+
+                    </StackLayout>
+                </Frame>
+                <Frame BorderColor="#686868"
+                       BackgroundColor="#E1ECF1"
+                       
+                         Padding="10,5,5,10">
+                    <StackLayout Orientation="Vertical"
+                         Spacing="10">
+
+
+                        <Label Text="Source"
+                       FontSize="Small"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center" />
+
+                        <Label
+                       FontSize="Large"
+                         TextDecorations="Underline"
+                       TextColor="#2D3141"
+                            x:Name="SourceText"
+                       VerticalOptions="Center" />
+
+                        
+                    </StackLayout>
+                </Frame>
+                <Frame BorderColor="#686868"
+                       BackgroundColor="#E1ECF1"
+                       
+                         Padding="10,5,5,10">
+                    <StackLayout Orientation="Vertical"
+                         Spacing="10">
+
+
+                        <Label Text="Description"
+                       FontSize="Small"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center" />
+
+                        <Label
+                       FontSize="Medium"
+                       TextColor="#2D3141"
+                            x:Name="DescriptionText"
+                       VerticalOptions="Center" />
+
+
+                    </StackLayout>
+                </Frame>
+
+                <ListView x:Name="SubTopicTable" 
+                      ItemSelected="SubTopicTable_ItemSelected"
+                      IsPullToRefreshEnabled="true"
+                       ListView.RowHeight ="100"
+                      >
+
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+
+                            <ViewCell
+                          
+                        >
+                                <StackLayout
+                                Orientation="Horizontal"
+                                Spacing="15"
+                            >
+
+                                    <Image WidthRequest="100" Source="{Binding ImagePath}" Aspect="AspectFill" />
+                                    <StackLayout
+                                Orientation="Vertical"
+                                Padding="10"
+                            >
+
+                                        <Label Text="{Binding Title}" StyleClass="listTitle" />
+                                        <Label  Text="{Binding Desc}" StyleClass="listDesc"   MaxLines="1" LineBreakMode="TailTruncation" />
+
+                                    </StackLayout>
+                                </StackLayout>
+
+
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+
+                </ListView>
+
+
+            </StackLayout>
+
+
+            
+          
+        </StackLayout>
+      </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
