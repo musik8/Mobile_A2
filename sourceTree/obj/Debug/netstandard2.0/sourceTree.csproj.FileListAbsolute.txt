@@ -1,0 +1,17 @@
+C:\Users\Maxim\source\repos\sourceTree\sourceTree\sourceTree\bin\Debug\netstandard2.0\sourceTree.deps.json
+C:\Users\Maxim\source\repos\sourceTree\sourceTree\sourceTree\bin\Debug\netstandard2.0\sourceTree.dll
+C:\Users\Maxim\source\repos\sourceTree\sourceTree\sourceTree\bin\Debug\netstandard2.0\ref\sourceTree.dll
+C:\Users\Maxim\source\repos\sourceTree\sourceTree\sourceTree\bin\Debug\netstandard2.0\sourceTree.pdb
+C:\Users\Maxim\source\repos\sourceTree\sourceTree\sourceTree\obj\Debug\netstandard2.0\sourceTree.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Maxim\source\repos\sourceTree\sourceTree\sourceTree\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Maxim\source\repos\sourceTree\sourceTree\sourceTree\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Maxim\source\repos\sourceTree\sourceTree\sourceTree\obj\Debug\netstandard2.0\TopicDisplay.xaml.g.cs
+C:\Users\Maxim\source\repos\sourceTree\sourceTree\sourceTree\obj\Debug\netstandard2.0\sourceTree.AssemblyInfoInputs.cache
+C:\Users\Maxim\source\repos\sourceTree\sourceTree\sourceTree\obj\Debug\netstandard2.0\sourceTree.AssemblyInfo.cs
+C:\Users\Maxim\source\repos\sourceTree\sourceTree\sourceTree\obj\Debug\netstandard2.0\sourceTree.csproj.CoreCompileInputs.cache
+C:\Users\Maxim\source\repos\sourceTree\sourceTree\sourceTree\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Maxim\source\repos\sourceTree\sourceTree\sourceTree\obj\Debug\netstandard2.0\sourceTree.dll
+C:\Users\Maxim\source\repos\sourceTree\sourceTree\sourceTree\obj\Debug\netstandard2.0\ref\sourceTree.dll
+C:\Users\Maxim\source\repos\sourceTree\sourceTree\sourceTree\obj\Debug\netstandard2.0\sourceTree.pdb
+C:\Users\Maxim\source\repos\sourceTree\sourceTree\sourceTree\obj\Debug\netstandard2.0\sourceTree.csproj.AssemblyReference.cache
+C:\Users\Maxim\source\repos\sourceTree\sourceTree\sourceTree\obj\Debug\netstandard2.0\Assets\style.css.g.cs

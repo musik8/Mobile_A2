@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="sourceTree.MainPage"
+             Padding="0,0,0,0"
+             Title="Source Tree"
+             BackgroundColor="#E1ECF1"
+             >
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add Topic"
+                 Order="Primary"
+                     Clicked="ToolbarItem_Clicked"
+                     
+                 Priority="0" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Resources>
+        <StyleSheet Source="/Assets/style.css" />
+    </ContentPage.Resources>
+
+    <StackLayout Padding="0">
+
+        <ListView x:Name="TopicTable" 
+                 ItemSelected="TopicTable_ItemSelected"
+                  IsPullToRefreshEnabled="true"
+                   ListView.RowHeight ="100"
+                  >
+            
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell
+                          
+                        >
+                        <StackLayout
+                                Orientation="Horizontal"
+                                Spacing="15"
+                            >
+                            
+                            <Image WidthRequest="100" Source="{Binding ImagePath}" Aspect="AspectFill" />
+                            <StackLayout
+                                Orientation="Vertical"
+                                Padding="10"
+                            >
+
+                                <Label Text="{Binding Title}" StyleClass="listTitle" />
+                                <Label  Text="{Binding Desc}" StyleClass="listDesc"   MaxLines="2" LineBreakMode="TailTruncation" />
+
+                            </StackLayout>
+                        </StackLayout>
+                       
+
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        
+        </ListView>
+    </StackLayout>
+
+
+</ContentPage>
+
+
+<!--<RelativeLayout>-->
+
+    <!--<StackLayout
+           x:Name="stack_layout"
+         
+           BackgroundColor="Beige"
+           RelativeLayout.HeightConstraint="{ConstraintExpression
+           Type=RelativeToParent,Property=Height,Factor=0.3}"
+           RelativeLayout.WidthConstraint="{ConstraintExpression
+           Type=RelativeToParent,Property=Width,Factor=0.5}"
+           RelativeLayout.XConstraint="{ConstraintExpression
+           Type=RelativeToParent,Property=Width,Factor=0.5,
+           Constant=-80}"
+           >
+
+
+        <Entry x:Name="nameText" Placeholder="Contact Name"/>
+        <Entry x:Name="numText" Placeholder="Contact Number"/>
+        <Button Text="Update Contact" Clicked="updateContact"/>
+
+        <Button Text="Add New Contact" Clicked="moveToNewPage"/>
+    </StackLayout>-->
+
+    <!--<BoxView Color="Red"
+                RelativeLayout.YConstraint="{ConstraintExpression
+           Type=RelativeToView,ElementName=stack_layout,
+           Property=Height,
+           Factor=0.5
+        }"
+                RelativeLayout.XConstraint="{ConstraintExpression
+           Type=RelativeToView,ElementName=stack_layout,
+           Property=Width,
+           Factor=0.5,
+           Constant=-20}"
+
+
+                />-->
+    <!--<ListView x:Name="myList"
+                  ItemSelected="myList_ItemSelected"
+                  RelativeLayout.HeightConstraint="{ConstraintExpression
+                     Type=RelativeToParent,Property=Height,Factor=0.7}"
+
+                  RelativeLayout.WidthConstraint="{ConstraintExpression
+           Type=RelativeToParent,Property=Width,Factor=1}"
+
+                  RelativeLayout.YConstraint="{ConstraintExpression
+                    Type=RelativeToParent,Property=Height, Factor=0.3}"
+                  >
+
+        <ListView.ItemTemplate>
+            <DataTemplate>
+
+                <ImageCell Text="{Binding name}"
+                                Detail="{Binding number}"
+                               ImageSource="{Binding imageURL}"
+                              >
+                    <ImageCell.ContextActions>
+                        <MenuItem Text="Call" CommandParameter="{Binding .}"
+                                      Clicked="CallMenuItem_Clicked"></MenuItem>
+                        <MenuItem Text="Delete"
+                                       CommandParameter="{Binding .}"
+                                       Clicked="DeleteMenuItem_Clicked"
+                                       IsDestructive="True"></MenuItem>
+
+                    </ImageCell.ContextActions>
+
+                </ImageCell>
+            </DataTemplate>
+
+        </ListView.ItemTemplate>
+
+
+    </ListView>-->
+<!--</RelativeLayout>-->
